@@ -1,11 +1,20 @@
-To build and run the server:
-
+To build the server and client
+```bash
+bazel build //client //server
+```
+Client executable will be available as
+``` 
+bazel-bin/client/client
+```
+Server executable will be available as
+```
+bazel-bin/server/server
+```
+You can build and run with a one-liner
 ```bash
 bazel run //server
 ```
-
-To build and run the client:
-
+or
 ```bash
 bazel run //client
 ```
